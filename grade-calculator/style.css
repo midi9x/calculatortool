@@ -1,0 +1,214 @@
+[v-cloak] .v-cloak--hidden {
+  display: none !important;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+#final-grade {
+  font-weight: 400;
+  max-width: 960px;
+  margin: 0 auto;
+  float: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #515151;
+}
+#final-grade input, #final-grade select {
+  font-weight: 400;
+}
+#final-grade button {
+  font-weight: 400;
+}
+#final-grade a, #final-grade a:active, #final-grade a:hover, #final-grade a:visited {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+#final-grade input[type=text], #final-grade input[type=number], #final-grade select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
+}
+#final-grade input[type=number]::-webkit-inner-spin-button,
+#final-grade input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#final-grade .select-wrapper {
+  position: relative;
+}
+#final-grade .select-wrapper::after {
+  display: block;
+  content: '';
+  background-color: red;
+  position: absolute;
+  background: url("http://cdn.gpacalculator.net/wp-content/plugins/grade-calculators/public/img/select-box-dropdown.svg");
+  width: 12px;
+  height: 6px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: .5rem;
+  top: 48%;
+}
+#final-grade h1, #final-grade h2, #final-grade h3, #final-grade h4, #final-grade h5 {
+  font-family: "Poppins", sans-serif;
+  color: #515151;
+}
+#final-grade h2 {
+  font-size: 30px;
+}
+#final-grade h3 {
+  font-size: 16px;
+}
+#final-grade h4 {
+  clear: both;
+}
+#final-grade ul, #final-grade li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#final-grade input[type=text].course-name {
+  width: auto;
+  border: none !important;
+  background: #ececec;
+  max-width: 120px;
+}
+#final-grade input[type=text].course-name::-webkit-input-placeholder {
+  color: #3c3c3c;
+  font-weight: 600;
+}
+#final-grade input[type=text].course-name:-moz-placeholder {
+  /* Firefox 18- */
+  color: #3c3c3c;
+  font-weight: 600;
+}
+#final-grade input[type=text].course-name::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3c3c3c;
+  font-weight: 600;
+}
+#final-grade input[type=text].course-name:-ms-input-placeholder {
+  color: #3c3c3c;
+  font-weight: 600;
+}
+#final-grade .course {
+  margin-bottom: 6rem;
+}
+#final-grade a.add-assessment {
+  float: left;
+  clear: both;
+  display: block;
+  padding: 1rem 0;
+}
+#final-grade .panel {
+  clear: both;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2rem;
+  margin: 6rem 0 0 0;
+  clear: both;
+}
+#final-grade .panel .result {
+  display: inline-block;
+  margin-left: -2rem;
+}
+#final-grade .panel .highlight {
+  display: inline-block;
+  margin-left: 2rem;
+}
+#final-grade .current-grade.panel {
+  background: #f4faf9;
+  border: 1px solid #239f85;
+}
+#final-grade .current-grade.panel .highlight {
+  color: #239f85;
+}
+#final-grade .needed-grade.panel {
+  background: #f2f8ff;
+  border: 1px solid #0091ff;
+}
+#final-grade .needed-grade.panel .highlight {
+  color: #0091ff;
+}
+#final-grade ul.assessments input, #final-grade ul.assessments select, #final-grade ul.results input, #final-grade ul.results select {
+  width: 100%;
+}
+#final-grade ul.assessments li.equals, #final-grade ul.results li.equals {
+  position: relative;
+}
+#final-grade ul.assessments li.equals::after, #final-grade ul.results li.equals::after {
+  content: '=';
+  position: absolute;
+  right: -.25rem;
+  top: calc(50% - .75rem);
+}
+#final-grade ul.assessments .fields {
+  clear: both;
+  margin: 0 -0.5rem;
+}
+#final-grade ul.assessments .fields li {
+  width: 25%;
+  float: left;
+  padding: .5rem;
+}
+#final-grade .labels {
+  font-weight: 700;
+}
+@media screen and (max-width: 580px) {
+  #final-grade .labels {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #final-grade .labels {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #final-grade .labels {
+    font-size: 7px;
+  }
+}
+#final-grade ul.results .fields {
+  clear: both;
+  margin: 0 -0.5rem;
+}
+#final-grade ul.results .fields li {
+  width: 20%;
+  float: left;
+  padding: .5rem;
+  font-size: 12px;
+}
+#final-grade .add-course {
+  padding: .5rem;
+  border: 1px solid #c4c4c4;
+}
+#final-grade .error, #final-grade .warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #F1453D;
+  color: #fff;
+  text-align: center;
+  padding: .5rem;
+  z-index: 100001;
+}
+#final-grade .warning {
+  background: #ffd500;
+  color: #515151;
+}
+h4 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    font-size: 20px;
+}

@@ -1,0 +1,747 @@
+[v-cloak] .v-cloak--hidden {
+    display: none !important;
+}
+
+[v-cloak] {
+    display: none !important;
+}
+
+#grade-calculator {
+    font-weight: 400;
+    color: #999999;
+    clear: both;
+    /*width: 960px;*/
+    max-width: 100%;
+    padding-top: 2rem;
+    float: none;
+    margin: 0 auto;
+}
+#grade-calculator input, #grade-calculator select {
+    font-weight: 400;
+}
+#grade-calculator button {
+    font-weight: 400;
+}
+#grade-calculator .gc-clearfix::after, #grade-calculator #grade-calculator::after, #grade-calculator .grade-format .input-wrapper::after, #grade-calculator .results .card::after, #grade-calculator .results .grade-format::after, #grade-calculator .results ul.gpa::after, #grade-calculator .results ul.gpa li::after, #grade-calculator .results .gpa-types::after, #grade-calculator .gc-text::after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+#grade-calculator .row:before,
+#grade-calculator .row:after {
+    display: table;
+    content: " ";
+}
+#grade-calculator .row:after {
+    clear: both;
+}
+@media (max-width: 767px) {
+    #grade-calculator .hidden-xs {
+        display: none !important;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #grade-calculator select,
+    #grade-calculator textarea,
+    #grade-calculator input {
+        font-size: 16px !important;
+    }
+}
+#grade-calculator * {
+    box-sizing: border-box;
+}
+#grade-calculator ul,
+#grade-calculator ul li,
+#grade-calculator ul > li {
+    list-style-type: none !important;
+}
+#grade-calculator button {
+    cursor: pointer;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    border: none;
+    font-weight: 400;
+    text-transform: none;
+    font-size: initial;
+}
+@media screen and (max-width: 959px) {
+    #grade-calculator {
+        width: 100%;
+    }
+}
+#grade-calculator,
+#grade-calculator h1,
+#grade-calculator h2,
+#grade-calculator h3,
+#grade-calculator h4,
+#grade-calculator h5 {
+    font-family: "Poppins", sans-serif;
+}
+#grade-calculator a,
+#grade-calculator a:hover,
+#grade-calculator a:active {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+#grade-calculator .desktop {
+    display: initial;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .desktop {
+        display: none !important;
+    }
+}
+#grade-calculator .mobile {
+    display: none;
+    padding: 10px 0;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .mobile {
+        display: initial !important;
+    }
+}
+#grade-calculator label.mobile {
+    font-weight: 400;
+}
+#grade-calculator .gc-error {
+    background: red;
+    color: #fff;
+    width: 100%;
+    font-size: 11px;
+    border-radius: 2px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .gc-error {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999;
+    }
+}
+#grade-calculator .gc-error img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+#grade-calculator .card, #grade-calculator .grade-format {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding-left: 25px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .card, #grade-calculator .grade-format {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+}
+#grade-calculator ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#grade-calculator .row {
+    margin: 0;
+    padding: 0;
+}
+#grade-calculator .gc-main {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 992px) {
+    #grade-calculator .gc-main {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        right: 0;
+    }
+}
+@media screen and (max-width: 1360px) and (min-width: 1200px) {
+    #grade-calculator .gc-main {
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width: 959px) {
+    #grade-calculator .gc-main {
+        width: 100%;
+    }
+}
+#grade-calculator .gc-main > .card, #grade-calculator .gc-main > .grade-format {
+    margin-top: 0;
+}
+#grade-calculator .semester-title {
+    width: auto;
+    border: none !important;
+    background: #F4F4F4;
+    padding: 10px;
+    padding-left: 12px;
+    margin-left: -11px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    float: left;
+    max-width: 160px;
+    border-radius: 2px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .semester-title {
+        margin-left: 0;
+    }
+}
+#grade-calculator .remove-semester {
+    float: left;
+    margin: 1rem 0 0 .5rem;
+}
+#grade-calculator form.grade-entry input,
+#grade-calculator form.grade-entry select,
+#grade-calculator ul.classes input,
+#grade-calculator ul.classes select,
+#grade-calculator .current-gpa input,
+#grade-calculator .current-gpa select {
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    character: 0px;
+    display: block;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-family: "Poppins", sans-serif;
+    padding: 6px 12px !important;
+    outline: none;
+    box-shadow: none !important;
+}
+#grade-calculator form.grade-entry ::-webkit-input-placeholder,
+#grade-calculator ul.classes ::-webkit-input-placeholder,
+#grade-calculator .current-gpa ::-webkit-input-placeholder {
+    color: #dbdbdb;
+}
+#grade-calculator form.grade-entry :-moz-placeholder,
+#grade-calculator ul.classes :-moz-placeholder,
+#grade-calculator .current-gpa :-moz-placeholder {
+    /* Firefox 18- */
+    color: #dbdbdb;
+}
+#grade-calculator form.grade-entry ::-moz-placeholder,
+#grade-calculator ul.classes ::-moz-placeholder,
+#grade-calculator .current-gpa ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #dbdbdb;
+}
+#grade-calculator form.grade-entry :-ms-input-placeholder,
+#grade-calculator ul.classes :-ms-input-placeholder,
+#grade-calculator .current-gpa :-ms-input-placeholder {
+    color: #dbdbdb;
+}
+#grade-calculator form.grade-entry select,
+#grade-calculator ul.classes select,
+#grade-calculator .current-gpa select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    position: relative;
+    z-index: 9999;
+    background: transparent;
+    cursor: pointer;
+    padding: 0 12px !important;
+}
+#grade-calculator form.grade-entry .select-wrapper,
+#grade-calculator ul.classes .select-wrapper,
+#grade-calculator .current-gpa .select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#grade-calculator form.grade-entry .select-wrapper::after,
+#grade-calculator ul.classes .select-wrapper::after,
+#grade-calculator .current-gpa .select-wrapper::after {
+    content: '';
+    display: block;
+    background: url("http://cdn.gpacalculator.net/wp-content/plugins/grade-calculators/public//img/select-box-dropdown.svg");
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator form.grade-entry .input-wrapper.credits .select-wrapper::after,
+    #grade-calculator form.grade-entry .input-wrapper.class-type .select-wrapper::after,
+    #grade-calculator ul.classes .input-wrapper.credits .select-wrapper::after,
+    #grade-calculator ul.classes .input-wrapper.class-type .select-wrapper::after,
+    #grade-calculator .current-gpa .input-wrapper.credits .select-wrapper::after,
+    #grade-calculator .current-gpa .input-wrapper.class-type .select-wrapper::after {
+        top: 38px;
+    }
+}
+#grade-calculator .current-gpa {
+    clear: both;
+    border: 2px solid #dbdbdb;
+    border-radius: 3px;
+    margin-top: 0 !important;
+}
+#grade-calculator .current-gpa .col-sm-3 {
+    padding-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#grade-calculator .current-gpa .col-sm-3 label {
+    font-weight: 600;
+}
+#grade-calculator .current-gpa a {
+    font-size: 15px;
+    color: #999999;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+#grade-calculator .current-gpa a img {
+    float: right;
+    margin-right: 25px;
+    position: relative;
+    top: 7px;
+}
+#grade-calculator .current-gpa a.active {
+    color: #111;
+}
+#grade-calculator form.grade-entry .input-wrapper,
+#grade-calculator ul.classes .input-wrapper {
+    float: left;
+    padding-right: 10px;
+}
+#grade-calculator form.grade-entry .input-wrapper.class-name,
+#grade-calculator form.grade-entry label.class-name,
+#grade-calculator ul.classes .input-wrapper.class-name,
+#grade-calculator ul.classes label.class-name {
+    width: 195px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator form.grade-entry .input-wrapper.class-name,
+    #grade-calculator form.grade-entry label.class-name,
+    #grade-calculator ul.classes .input-wrapper.class-name,
+    #grade-calculator ul.classes label.class-name {
+        width: 50%;
+        float: left;
+    }
+}
+#grade-calculator form.grade-entry .input-wrapper.grade,
+#grade-calculator form.grade-entry .input-wrapper.credits,
+#grade-calculator form.grade-entry label.grade,
+#grade-calculator form.grade-entry label.credits,
+#grade-calculator ul.classes .input-wrapper.grade,
+#grade-calculator ul.classes .input-wrapper.credits,
+#grade-calculator ul.classes label.grade,
+#grade-calculator ul.classes label.credits {
+    width: 100px;
+}
+@media screen and (max-width: 1360px) {
+    #grade-calculator form.grade-entry .input-wrapper.grade,
+    #grade-calculator form.grade-entry .input-wrapper.credits,
+    #grade-calculator form.grade-entry label.grade,
+    #grade-calculator form.grade-entry label.credits,
+    #grade-calculator ul.classes .input-wrapper.grade,
+    #grade-calculator ul.classes .input-wrapper.credits,
+    #grade-calculator ul.classes label.grade,
+    #grade-calculator ul.classes label.credits {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    #grade-calculator form.grade-entry .input-wrapper.grade,
+    #grade-calculator form.grade-entry .input-wrapper.credits,
+    #grade-calculator form.grade-entry label.grade,
+    #grade-calculator form.grade-entry label.credits,
+    #grade-calculator ul.classes .input-wrapper.grade,
+    #grade-calculator ul.classes .input-wrapper.credits,
+    #grade-calculator ul.classes label.grade,
+    #grade-calculator ul.classes label.credits {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator form.grade-entry .input-wrapper.grade,
+    #grade-calculator form.grade-entry .input-wrapper.credits,
+    #grade-calculator form.grade-entry label.grade,
+    #grade-calculator form.grade-entry label.credits,
+    #grade-calculator ul.classes .input-wrapper.grade,
+    #grade-calculator ul.classes .input-wrapper.credits,
+    #grade-calculator ul.classes label.grade,
+    #grade-calculator ul.classes label.credits {
+        width: 50%;
+        float: left;
+    }
+}
+#grade-calculator form.grade-entry .input-wrapper.class-type,
+#grade-calculator form.grade-entry label.class-type,
+#grade-calculator ul.classes .input-wrapper.class-type,
+#grade-calculator ul.classes label.class-type {
+    width: 145px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator form.grade-entry .input-wrapper.class-type,
+    #grade-calculator form.grade-entry label.class-type,
+    #grade-calculator ul.classes .input-wrapper.class-type,
+    #grade-calculator ul.classes label.class-type {
+        width: 50%;
+        float: left;
+    }
+}
+#grade-calculator form.grade-entry label.heading,
+#grade-calculator ul.classes label.heading {
+    display: block;
+    float: left;
+}
+#grade-calculator form.grade-entry {
+    border-bottom: none;
+    z-index: 1;
+}
+#grade-calculator ul.classes {
+    border-top: none;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator ul.classes {
+        margin-top: 1rem;
+    }
+}
+#grade-calculator ul.classes li {
+    margin-bottom: 10px;
+    position: relative;
+    clear: both;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator ul.classes li {
+        margin-bottom: 2rem;
+    }
+}
+#grade-calculator .add-class {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .add-class {
+        text-align: center;
+    }
+}
+#grade-calculator .add-semester,
+#grade-calculator .current-gpa {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border: 1px solid #dbdbdb;
+}
+#grade-calculator .add-semester {
+    margin-top: 12px !important;
+}
+#grade-calculator .add-semester img {
+    position: relative;
+    top: 5px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .add-semester {
+        text-align: center;
+        border: 2px solid #13afdf;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    #grade-calculator .add-semester img {
+        display: none;
+    }
+}
+#grade-calculator .add-element {
+    background: transparent;
+    color: #0091ff;
+    border: none;
+    padding: 0;
+}
+#grade-calculator .add-element img {
+    position: relative;
+    top: 5px;
+}
+#grade-calculator .grade-format {
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: initial !important;
+    padding: .5rem;
+    width: 264px;
+    max-width: 96%;
+    float: right;
+}
+#grade-calculator .grade-format .input-wrapper {
+    white-space: nowrap;
+    max-width: 160px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 1200px) {
+    #grade-calculator .grade-format {
+        border: none;
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        display: block;
+    }
+    #grade-calculator .grade-format .input-wrapper {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .grade-format {
+        margin-top: 15px !important;
+    }
+}
+#grade-calculator .grade-format h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+#grade-calculator .grade-format input[type=radio] {
+    display: none;
+}
+#grade-calculator .grade-format label {
+    font-weight: 500;
+    character: 0.5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 93px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    width: 78px;
+}
+#grade-calculator .grade-format input:checked + label {
+    color: #fff;
+    background: #13afdf;
+}
+#grade-calculator .grade-format .input-wrapper {
+    background: #fff;
+    height: 30px;
+    border: 2px solid #dbdbdb;
+}
+#grade-calculator .grade-format .input-wrapper,
+#grade-calculator .grade-format label {
+    border-radius: 25px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .grade-format {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+#grade-calculator .remove-class {
+    margin-top: 7px;
+    display: inline-block;
+    cursor: pointer;
+}
+#grade-calculator .mobile .remove-class {
+    float: right;
+    margin-top: -2px;
+}
+@media screen and (max-width: 1360px) and (min-width: 1200px) {
+    #grade-calculator .topbar {
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #grade-calculator .results {
+        float: right !important;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        left: 0;
+    }
+}
+@media screen and (max-width: 959px) {
+    #grade-calculator .results {
+        width: 100%;
+    }
+}
+#grade-calculator .results .card, #grade-calculator .results .grade-format {
+    min-height: 411px;
+    width: 264px;
+    max-width: 96%;
+    float: right;
+    padding: 0;
+    padding-bottom: 2rem;
+    margin-top: 0;
+}
+@-moz-document url-prefix() {
+    #grade-calculator .results .card, #grade-calculator .results .grade-format {
+        min-height: 402px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #grade-calculator .results .card, #grade-calculator .results .grade-format {
+        width: 100%;
+        min-height: initial;
+        max-width: initial;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        border-top: none;
+    }
+}
+#grade-calculator .results h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .results h2 {
+        font-weight: 400;
+    }
+}
+#grade-calculator .results ul.gpa {
+    margin-top: 15px;
+    padding: 1rem;
+}
+#grade-calculator .results ul.gpa li {
+    border-bottom: 2px solid #dbdbdb;
+    white-space: nowrap;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .results ul.gpa li {
+        padding: .5rem 0;
+    }
+}
+#grade-calculator .results ul.gpa li:last-child {
+    border-bottom: none;
+}
+#grade-calculator .results ul.gpa li:first-child {
+    color: purple;
+}
+#grade-calculator .results ul.gpa li div:first-child {
+    text-align: left;
+    font-size: 15px;
+    line-height: 52px;
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .results ul.gpa li div:first-child {
+        height: auto;
+        line-height: auto;
+    }
+}
+#grade-calculator .results ul.gpa li div:last-child {
+    text-align: right;
+    font-size: 25px;
+    padding-top: 5px;
+}
+#grade-calculator .results .gpa-types {
+    padding: 0 1rem;
+}
+#grade-calculator .results .gpa-types a {
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    color: #999999;
+    text-transform: uppercase;
+}
+#grade-calculator .results .gpa-types a.active {
+    border-bottom: 3px solid #404040;
+    color: #111;
+}
+#grade-calculator .gc-text {
+    clear: both;
+    margin-top: 150px;
+}
+@media screen and (max-width: 959px) and (min-width: 640px) {
+    #grade-calculator .gc-text {
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    #grade-calculator .gc-text {
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+}
+#grade-calculator .gc-text h2 {
+    font-size: 21px;
+    color: #404040;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+#grade-calculator .gc-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    margin: 0;
+}
+#grade-calculator .mobile-results {
+    border-top: 2px solid #dbdbdb;
+    font-weight: 500;
+    background: #f5f5f5;
+    position: fixed;
+    left: 0;
+    z-index: 999999999;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(120, 120, 120, 0.2);
+    padding-bottom: 0;
+}
+#grade-calculator .mobile-results .gpa-bar {
+    text-transform: uppercase;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#grade-calculator .mobile-results .gpa-wrapper {
+    transform: scaleY(0);
+    display: none;
+    transition: all 1s;
+}
+#grade-calculator .mobile-results .gpa-wrapper.open {
+    transform: scaleY(1);
+    display: block;
+}
+#grade-calculator .mobile-results .col-xs-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 10px;
+}
+#grade-calculator .mobile-results li .col-xs-4 {
+    padding-bottom: 10px;
+}
+#grade-calculator #mobile-results {
+    transition: all .75s;
+    bottom: 0;
+}
+#grade-calculator #mobile-results.open {
+    bottom: 0;
+}
+#grade-calculator .add-element img {
+    position: relative;
+    top: -1px;
+}
+#grade-calculator * {
+    box-sizing: border-box;
+}

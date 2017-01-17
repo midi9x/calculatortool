@@ -1,0 +1,106 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 2;
+    margin-bottom: 40px;
+    width: 100%;
+}
+table {
+    background-color: transparent;
+}
+#GradePercents .grades th {
+    border: 1px solid #2E2F33;
+    text-align: center;
+}
+
+#GradePercents .grades td {
+    padding: 8px 12px;
+    border: 1px solid #2E2F33;
+  
+}
+
+#GradePercents .grades input[type="text"] {
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+#GradePercents .form_buttons tbody {
+    border: none;
+}
+
+#GradePercents .form_buttons td {
+    border: none;
+    text-align: center;
+}
+html input[type=button] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+input[type="button"] {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: #2e2f33;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #5e6069;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    padding: 16px;
+    width: 100%;
+}
+input:hover[type="button"] {
+    background-color: #13afdf;
+    color: #fff;
+}
+input[type="reset"] {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: #2e2f33;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+input[type=reset] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+input:hover[type="reset"] {
+    background-color: #13afdf;
+    color: #fff;
+}

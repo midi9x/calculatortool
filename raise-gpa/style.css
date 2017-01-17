@@ -1,0 +1,74 @@
+#calcframe {
+    max-width: 100%;
+    padding: 20px;
+}
+.wg-calc, .calcframeh {
+    margin: 0 0 10px 0;
+    padding: 10px 3% 0 3%;
+    border: 1px solid;
+    border-color: #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.r_cgpa {
+    float: left;
+    width: 48%;
+}
+#calcframe input {
+    padding: 10px;
+    max-width: 100px;
+}
+.r_credits {
+    float: left;
+    width: 48%;
+    clear: right;
+}
+.wg-calc *, .calcframeh * {
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", Sans-serif;
+}
+#q1 {
+    border-bottom: 1px solid rgba(155, 179, 202, 0.45);
+}
+#q2 {
+    border-bottom: 1px solid rgba(155, 179, 202, 0.45);
+}
+.wg-calc *, .calcframeh * {
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", Sans-serif;
+}
+button {
+    border-radius: 2px;
+    background: #404040;
+    color: #fff;
+}
+button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: #2e2f33;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}

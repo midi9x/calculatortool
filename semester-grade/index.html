@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Tool</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../">CalculatorTool</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../college-gpa-calculator">College GPA Calculator <span class="sr-only">(current)</span></a></li>
+                        <li><a href="../high-school-gpa-calculator">High School GPA Calculator</a></li>
+                        <li class="dropdown active">   
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grade Calculator <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../grade-calculator">Grade Calculator</a></li>
+                                <li><a href="../semester-grade">Semester Grade Calculator</a></li>
+                                <li><a href="../weighted-grade">Weighted Grade Calculator</a></li>
+                                <li><a href="../final-grade">Final Grade Calculator</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../raise-gpa">How to Raise GPA</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <form id="GradePercents" name="GradePercents" action="none" enctype="text/plain" onsubmit="return checkForm()">
+            <table class="grades" border="1" cellpadding="5" bordercolorlight="#CC9966" bordercolordark="#660000">
+                <tbody>
+                    <tr>
+                        <th colspan="2"> 1<sup>st</sup> Quarter</th>
+                        <th colspan="2"> 2<sup>nd</sup> Quarter</th>
+                        <th colspan="2"> Final Exam</th>
+                        <th> Semester</th>
+                    </tr>
+                    <tr>
+                        <th> Grade
+                            <br>(%)</th>
+                        <th> Percent
+                            <br>of Sem Grade</th>
+                        <th> Grade
+                            <br>(%)</th>
+                        <th> Percent
+                            <br>of Sem Grade</th>
+                        <th> Grade
+                            <br>(%)</th>
+                        <th> Percent
+                            <br>of Sem Grade</th>
+                        <th> Grade
+                            <br>(%)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="frstQrt" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="frstPrcntSem" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="scndQrt" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="scndPrcntSem" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="exam" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="examPrcntSem" type="text" size="5">
+                        </td>
+                        <td>
+                            <input name="semGrd" type="text" size="5">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="form_buttons">
+                <tbody>
+                    <tr>
+                        <td>
+                            <input name="calcSemGrd" type="button" value="Calculate My Semester Grade" onclick="semGrade(this.form)">
+                        </td>
+                        <td>
+                            <input name="finalExamGrd" type="button" value="What Do I Have to Get on the Exam?" onclick="finalExamGrade(this.form)">
+                        </td>
+                        <td>
+                            <input name="rst" type="reset" value="Start Over">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

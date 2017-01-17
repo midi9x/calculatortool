@@ -1,0 +1,195 @@
+input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #5e6069;
+    font-size: 16px;
+    font-weight: 300; 
+    line-height: 1.5;
+    padding: 16px;
+    width: 100%;
+}
+#calcframebs .course-name {
+    margin-left: 10px;
+    padding: 3px;
+    -webkit-appearance: none;
+}
+#calcframebs input, #calcframebs select {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+#calcframebs h4 {
+    text-align: center;
+    line-height: inherit;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+@media screen and (max-width: 767px) {
+    #calcframebs .course-name {
+        width: calc(64.666667% - 1px);
+        float: right;
+        margin-right: 1.4rem;
+    }
+}
+
+#calcframebs label {
+    font-size: 19px;
+    text-align: center;
+}
+#calcframebs .form-group {
+    margin-bottom: 5px;
+}
+#calcframebs .select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+}
+#calcframebs .form-control {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: text-top;
+}
+#calcframebs div select {
+    text-indent: 0;
+}
+#calcframebs .center-btn {
+    text-align: center;
+}
+#calcframebs .calc-addh {
+    margin: 1rem auto !important;
+}
+#calcframebs button {
+    background: #C2C8CB;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    padding: 12px 20px;
+}
+button {
+    border-radius: 2px;
+    background: #404040;
+    color: #fff;
+}
+
+button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: #2e2f33;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+#calcframebs button:hover {
+    background: #b4bcbf;
+}
+#calcframebs #calc-do {
+    display: none;
+}
+#calcframebs .calcrow > .row {
+    padding-bottom: 0.5rem;
+}
+
+#calcframebs .wg-result-wrapper {
+    padding: 0;
+    text-align: center;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score {
+    width: 160px;
+    margin: 0 auto;
+    border-left: none;
+    left: -6px;
+    padding: 0;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle {
+    box-sizing: content-box;
+    border: 6px solid #eee;
+    border-radius: 200px;
+    margin: 0 0 20px 0;
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle .score-outer {
+    transition: 1s;
+    background: #BE2117 none repeat scroll 0% 0%;
+    color: #FFF;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    margin: 0px;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span.your-title {
+    line-height: 1.1;
+    font-size: 16px;
+    width: 80%;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span.score {
+    font-weight: 700;
+    font-size: 50px;
+}
+#calcframebs h1, #calcframebs h2, #calcframebs h3, #calcframebs h4, #calcframebs h5, #calcframebs label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+#calcframebs .wg-result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1;
+}
+#calcframebs .raise-gpa {
+    float: none;
+    margin: 0 auto;
+    max-width: 339px;
+    padding-left: 12px;
+    padding-right: 17px;
+}
+#calcframebs a.btn-primary {
+    margin-bottom: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #C2C8CB;
+}

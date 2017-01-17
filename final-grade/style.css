@@ -1,0 +1,112 @@
+.wg-calc, .calcframeh {
+    margin: 0 0 10px 0;
+    padding: 10px 3% 0 3%;
+    border: 1px solid;
+    border-color: #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding-bottom: 30px;
+}
+.wg-calc *, .calcframeh * {
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", Sans-serif;
+}
+.wg-calc.wg-final-grade-calc .wg-calc-row {
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+.wg-calc .wg-calc-row, .calcframeh .wg-calc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 7px 0 0 0;
+}
+.wg-calc.wg-final-grade-calc .wg-calc-row .small-column {
+    display: inline-block;
+    width: 25%;
+}
+.wg-calc.wg-final-grade-calc .wg-calc-row span {
+    text-align: right;
+    font-size: 16px;
+    padding-right: 10px;
+}
+.wg-calc.wg-final-grade-calc .wg-calc-row .small-column {
+    display: inline-block;
+    width: 25%;
+}
+.wg-calc input[type="text"], .wg-calc input[type="number"], .calcframeh input[type="text"], .calcframeh input[type="number"] {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 6px 16px;
+    color: #000;
+}
+.wg-calc .result-wrapper, .calcframeh .result-wrapper {
+    padding: 12px 0 0 0;
+    text-align: center;
+}
+.wg-calc.wg-final-grade-calc .sidebar.sidebar-score {
+    margin-top: 25px;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score, .calcframeh .result-wrapper .sidebar.sidebar-score {
+    width: 145px;
+    margin: 0 auto;
+    border-left: none;
+    left: -6px;
+    padding: 0;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle {
+    box-sizing: content-box;
+    border: 6px solid #eee;
+    border-radius: 200px;
+    margin: 0 0 20px 0;
+    height: 145px;
+    width: 145px;
+    overflow: hidden;
+}
+.wg-calc *, .calcframeh * {
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", Sans-serif;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle .score-outer, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle .score-outer {
+    transition: 1s;
+    background: #BE2117 none repeat scroll 0% 0%;
+    color: #FFF;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    width: 145px;
+    height: 145px;
+    margin: 0px;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.wg-calc.wg-final-grade-calc .sidebar.sidebar-score .score-circle .score-outer .score-inner span {
+    font-size: 15px;
+    line-height: 1.2;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span {
+    display: block;
+    font-weight: 400;
+    line-height: 1;
+}
+.wg-calc.wg-final-grade-calc .sidebar.sidebar-score .score-circle .score-outer .score-inner span.score {
+    font-size: 35px;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span.score, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span.score {
+    font-weight: 700;
+    font-size: 40px;
+}
+.wg-calc.wg-final-grade-calc .sidebar.sidebar-score .score-circle .score-outer .score-inner span {
+    font-size: 15px;
+    line-height: 1.2;
+}
+.wg-calc .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span, .calcframeh .result-wrapper .sidebar.sidebar-score .score-circle .score-outer .score-inner span {
+    display: block;
+    font-weight: 400;
+     line-height: 1; 
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Tool</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../">CalculatorTool</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../college-gpa-calculator">College GPA Calculator <span class="sr-only">(current)</span></a></li>
+                        <li><a href="../high-school-gpa-calculator">High School GPA Calculator</a></li>
+                        <li class="dropdown active">   
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grade Calculator <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../grade-calculator">Grade Calculator</a></li>
+                                <li><a href="../semester-grade">Semester Grade Calculator</a></li>
+                                <li><a href="../weighted-grade">Weighted Grade Calculator</a></li>
+                                <li><a href="../final-grade">Final Grade Calculator</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../raise-gpa">How to Raise GPA</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <section class="final-grade">
+            <div id="final-grade"> {{validate}}
+                <div v-cloak class="error" v-if="validation.message">{{validation.message}}</div>
+                <div v-cloak class="warning" v-if="warning">{{warning}}</div>
+                <div class="course" v-for="(course, courseIndex) in courses">
+                    <input type="text" class="course-name" placeholder="Class Name" v-model="course.title">
+                    <ul class="assessments">
+                        <li class="labels">
+                            <ul class="fields">
+                                <li>Assessment</li>
+                                <li>Grade (%)</li>
+                                <li>Grade (Letter)</li>
+                                <li>% of Class Grade</li>
+                            </ul>
+                        </li>
+                        <li v-for="(assessment, assessmentIndex) in course.assessments">
+                            <ul class="fields">
+                                <li>
+                                    <input type="text" v-model="assessment.name" v-bind:placeholder="getPlaceholder(assessmentIndex)">
+                                </li>
+                                <li class="equals"> <span class="select-wrapper"> <select tabindex="-1" v-model="assessment.grade"  v-on:change="setLetterGrade(assessment.grade, false, courseIndex, assessmentIndex)"><option v-for="grade in grades" :value="grade" v-text="grade"></option> </select> </span>
+                                </li>
+                                <li> <span class="select-wrapper"> <select tabindex="-1" v-model="assessment.letterGrade" v-on:change="setNumberGrade($event, false, courseIndex, assessmentIndex)"><option v-for="letter in letters" :value="letter.label" v-text="letter.label"></option> </select> </span>
+                                </li>
+                                <li>
+                                    <input type="number" min="1" v-model="assessment.percentageOfClass">
+                                </li>
+                            </ul>
+                        </li> <a class="add-assessment" @click.prevent="addAssessment(courseIndex)">+ Add Assessment</a>
+                    </ul>
+                    <div v-if="!validation.message && currentGrades[courseIndex].percentage>0" class="panel current-grade text-center"> <span class="result">Your Current Grade: <span class="highlight">{{currentGrades[courseIndex].percentage}}% ({{currentGrades[courseIndex].letter}})</span></span>
+                    </div>
+                    <h4>What do I need on my final?</h4>
+                    <ul v-cloak v-if="currentGrades[courseIndex].percentage>0" class="results">
+                        <li class="labels">
+                            <ul class="fields">
+                                <li>Current Grade (%)</li>
+                                <li>Letter</li>
+                                <li>Final Worth (%)</li>
+                                <li>Desired Grade %</li>
+                                <li>Letter</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="fields">
+                                <li class="equals">
+                                    <input type="number" readonly v-model="currentGrades[courseIndex].percentage">
+                                </li>
+                                <li>
+                                    <input type="text" readonly v-model="currentGrades[courseIndex].letter">
+                                </li>
+                                <li>
+                                    <input type="number" v-model="courses[courseIndex].finalWeight">
+                                </li>
+                                <li> <span class="select-wrapper"> <select tabindex="-1" v-model="courses[courseIndex].desiredGrade" v-on:change="setLetterGrade(courses[courseIndex].desiredGrade, true, courseIndex)"><option v-for="grade in grades" :value="grade" v-text="grade"></option> </select> </span>
+                                </li>
+                                <li> <span class="select-wrapper"> <select tabindex="-1" v-model="courses[courseIndex].desiredLetterGrade" v-on:change="setNumberGrade($event, true, courseIndex)"><option v-for="letter in letters" :value="letter.label" v-text="letter.label"></option> </select> </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div v-cloak v-if="validation.message==''&&!isNaN(finalGrades[courseIndex].percentage)&&finalGrades[courseIndex].percentage>0" class="needed-grade panel text-center"> <span class="result">Grade Needed in Final: <span class="highlight">{{finalGrades[courseIndex].percentage}}% ({{finalGrades[courseIndex].letter}})</span></span>
+                    </div>
+                </div>
+                <div class="add-course"> <a @click.prevent="addCourse(1)">+ Add Class</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../high-school-gpa-calculator/app.js"></script>
+</body>
+</html>
